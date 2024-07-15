@@ -1,0 +1,36 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 25px;
+  align-items: center;
+
+  padding: 10px;
+
+  border: 1px solid black;
+  border-radius: 8px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 1 * 20px) / 2);
+  }
+
+  @media screen and (min-width: 1268px) {
+    flex-basis: calc((100% - 3 * 20px) / 4);
+  }
+
+  @media screen and (min-width: 1440px) {
+    flex-basis: calc((100% - 4 * 20px) / 5);
+  }
+}
+
+.name {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.number {
+  margin: 0;
+}
